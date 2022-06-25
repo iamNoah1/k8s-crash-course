@@ -7,9 +7,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./example_apps/todos-disk
 
     steps:
     - uses: actions/checkout@v3
@@ -28,4 +25,5 @@ jobs:
       with:
         push: true
         tags: iamnoah4real/todo-disk:latest
+        context: ./example_apps/todos-disk
         file: ./example_apps/todos-disk/Dockerfile
