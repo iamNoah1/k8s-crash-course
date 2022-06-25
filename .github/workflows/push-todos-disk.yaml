@@ -5,8 +5,8 @@ on:
     branches: [ "complete" ]
 
 defaults:
- run:
-  working-directory: ./example_apps/todos-disk
+  run:
+    working-directory: ./example_apps/todos-disk
 
 jobs:
   build:
