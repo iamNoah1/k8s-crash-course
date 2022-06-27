@@ -1,8 +1,9 @@
+const { json } = require('body-parser')
 const express = require('express')
 const app = express()
 const fs = require('fs')
 
-const path = process.env.DB_PATH | './todos.json'
+const path = process.env.DB_PATH || './todos.json'
 
 app.use(express.json())
 
@@ -11,9 +12,13 @@ app.listen(8080, function () {
 });
 
 app.post('/todo', function (req, res) {
+    console.log('Entered POST /todo')
+    console.log('Payload: ' + JSON.stringify(req.body))
+
     const newTodo = req.body
 
     if (!fileExists(path)) {
+        console.log('DB file does not exist, going to create it')
         fs.writeFileSync(path, "[]");
     }
 
@@ -26,6 +31,7 @@ app.post('/todo', function (req, res) {
 });
 
 app.get('/todo', function (req, res) {
+    console.log('Entered GET /todo')
     if (!fileExists(path)) {
         res.status(200).send('No todos there yet')
     } else {
