@@ -3,7 +3,7 @@
 This repo contains content that can be used to learn how to use Kubernetes. 
 
 ## How to use this repo 
-On the main branch, the project is completely empty. Go through the steps mentioned below. You will find solutions for each step on the respective branch (`step-n-solution`)
+Go through the steps mentioned below. You will find solutions for each step on the respective branch (`step-n-solution`)
 
 ## Prerequisites
 * `kubectl` installed
@@ -46,7 +46,7 @@ These are your tasks:
 Let's Scale the app. To at least 2 instances. What is happening now? Houston, do we have problem? 
 
 ## step 6 - Persistent Volumes
-In this step we should create a persistent volume and attach it to our application. 
+In this step we should create a persistent volume and attach it to our application. What do need to change in order for the application to use that persistant volume? 
 
 ## step 7 - Switch to Database persistence
 To be honest, there are more sophisticated ways to implement persistence for an application than storing data in a file on the disk, right? Let's use a database. 
@@ -54,4 +54,3 @@ To be honest, there are more sophisticated ways to implement persistence for an 
 Your challenge: 
 * Deploy a Mongodb to your K8s cluster 
 * Deploy the modified version of the app which stores data in the db (iamnoah4real/todos-db)
-
