@@ -27,7 +27,7 @@ Do the following:
 ## step 2 - Resilience
 In this step we need to create something that is more resilient than our nginx server from the last step. 
 
-Deploy an nginx server or any other image (i.e [iamnoah4real/saywhat](https://github.com/iamNoah1/saywhat)) in a resilient way. Resilience means that when the pod gets killed or the application crashes, Kubernetes will spin it up again. 
+Deploy an nginx server or any other image (i.e [iamnoah4real/saywhat](https://hub.docker.com/repository/docker/iamnoah4real/saywhat)) in a resilient way. Resilience means that when the pod gets killed or the application crashes, Kubernetes will spin it up again. 
 
 ## step 3 - Expose your Application
 Now, we want to expose our application. Being it a simple nginx server, the saywhat nodejs thing or anything you want to. There are several ways to achieve this, so to get the most out this, you could find all different ways and try them :) 
@@ -53,4 +53,4 @@ To be honest, there are more sophisticated ways to implement persistence for an 
 
 Your challenge: 
 * Deploy a Mongodb to your K8s cluster 
-* Deploy the modified version of the app which stores data in the db (iamnoah4real/todos-disk)
+* Deploy the modified version of the app which stores data in the db ([iamnoah4real/todos-disk](https://hub.docker.com/repository/docker/iamnoah4real/todos-disk))
