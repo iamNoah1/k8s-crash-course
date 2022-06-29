@@ -53,4 +53,4 @@ To be honest, there are more sophisticated ways to implement persistence for an 
 
 Your challenge: 
 * Deploy a Mongodb to your K8s cluster 
-* Deploy the modified version of the app which stores data in the db (iamnoah4real/todos-db)
+* Deploy the modified version of the app which stores data in the db (iamnoah4real/todos-disk)

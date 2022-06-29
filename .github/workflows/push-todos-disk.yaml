@@ -24,6 +24,6 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: iamnoah4real/todo-disk:latest
+        tags: iamnoah4real/todos-disk:latest
         context: ./example_apps/todos-disk
         file: ./example_apps/todos-disk/Dockerfile
